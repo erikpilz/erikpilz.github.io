@@ -15,8 +15,8 @@ layout: page
      plan: "Medium",
                                        company: "Hem & Stitch"
    },
-   onAqAnswer: (*args) => {
-     console.log("On AQ answer. Got:", args)
+   onAqAnswer: (...args) => {
+     console.log("onAqAnswer", args)
    }
  });
 </script>
