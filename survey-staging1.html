@@ -15,6 +15,7 @@ layout: page
 
   document.getElementById("showSurvey").addEventListener("click", function() {
     delighted.survey({
+      sampleFactor: 1,
       email: "customer@hemandstitch.com", // customer email (optional)
       name: "Bailey Dixon",               // customer name (optional)
       createdAt: "2016-01-01T12:00:00Z",  // time subscribed (optional)
