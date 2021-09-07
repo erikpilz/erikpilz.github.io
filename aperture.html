@@ -1,7 +1,7 @@
 <html>
   <body>
 
-    <div id="events">
+    <div id="eventlog">
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript">
@@ -9,7 +9,7 @@
        if (/^on/.test(key)) {
          window.addEventListener(key.slice(2), event => {
            console.log(event.type);
-           $("#events").append("<code>" + event.type + "</code><br/>");
+           $("#eventlog").append("<code>" + event.type + "</code><br/>");
          });
        }
      });
